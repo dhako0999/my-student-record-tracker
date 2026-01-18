@@ -1,0 +1,16 @@
+**/bin/
+**/obj/
+
+# JetBrains Rider
+.idea/
+*.DotSettings.user
+*.sln.iml
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Test results
+TestResults/

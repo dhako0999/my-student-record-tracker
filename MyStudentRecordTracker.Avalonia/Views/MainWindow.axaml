@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:HelloWorld.Avalonia.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="HelloWorld.Avalonia.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Width="520" Height="520"
+        Title="MyStudentRecordTracker.Avalonia">
+    
+    <StackPanel Margin="20" Spacing="12">
+        <TextBlock Text="Student Manager" FontSize="20" FontWeight="Bold"/>
+        <TextBox Text="{Binding NameInput}" Watermark="Student name" />
+        <TextBox Text="{Binding ScoreInput}" Watermark="Score" />
+        
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <Button Content="Add Student" Click="AddStudent_Click" IsEnabled="{Binding CanAddStudent}" />
+            <Button Content="Refresh" Click="Refresh_Click" />
+        </StackPanel>
+        
+        <TextBlock Text="{Binding StatusMessage}" Foreground="DarkRed" Margin="0, 5, 0, 0"/>
+        
+        <ListBox ItemsSource="{Binding Students}" MinHeight="250" />
+        
+        <TextBlock Text="{Binding DistributionText}" FontWeight="Bold" Margin="0,10, 0, 0"/>
+
+    </StackPanel>
+</Window>
