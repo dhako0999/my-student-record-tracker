@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStudentRecordTracker.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStudentRecordTracker.Avalonia", "MyStudentRecordTracker.Avalonia\MyStudentRecordTracker.Avalonia.csproj", "{690C0C69-208F-45E1-9C1E-B4E3945685B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStudentRecordTracker.Api", "MyStudentRecordTracker.Api\MyStudentRecordTracker.Api.csproj", "{5E80AECF-C588-41EE-B1E4-312073D1CD04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{690C0C69-208F-45E1-9C1E-B4E3945685B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{690C0C69-208F-45E1-9C1E-B4E3945685B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{690C0C69-208F-45E1-9C1E-B4E3945685B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E80AECF-C588-41EE-B1E4-312073D1CD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E80AECF-C588-41EE-B1E4-312073D1CD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E80AECF-C588-41EE-B1E4-312073D1CD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E80AECF-C588-41EE-B1E4-312073D1CD04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
